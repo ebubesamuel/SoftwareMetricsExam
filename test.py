@@ -1,6 +1,7 @@
 """This program is to determine the modular function (modf) of an argument"""
 import unittest
-#from wrapper_modf import wrapper
+from wrapper_modf import wrapper
+
 
 class TestModfMethod(unittest.TestCase):
     """"This class has methods which check the validity of an argument for
@@ -8,12 +9,12 @@ class TestModfMethod(unittest.TestCase):
 
     def test_wrapper_correct_argument(self):
         """This function checks if the argument are of a valid type"""
-        self.assertEqual(wrapper(1.79), 0.78)
+        self.assertEqual(wrapper(1.79), 0.79)
 
     def test_wrapper_incorrect_arg(self):
         """This function checks if the arguments are of an invalid type"""
         with self.assertRaises(TypeError):
-            wrapper(1)
+            wrapper("ebu")
 
     def test_wrapper_no_arg(self):
         """This function checks if the arguments are of valid type"""
