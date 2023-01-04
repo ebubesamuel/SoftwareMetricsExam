@@ -8,4 +8,4 @@ def wrapper(argument1):
 
 #in ordeer to test the cases, input in the assert wrapper below a different type eg. int/str
 assert wrapper(1.79)
-#print(wrapper(1.79))
+print(wrapper(1.79))
